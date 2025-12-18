@@ -1,0 +1,120 @@
+/* RESET BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABILI DI TEMA (facili da cambiare) */
+:root {
+  --primary: #6a1b9a;      /* Viola istituzionale */
+  --secondary: #4a148c;    /* Viola scuro */
+  --accent: #f3e5f5;       /* Viola chiarissimo */
+  --text-dark: #2c2c2c;
+  --text-light: #ffffff;
+  --bg-light: #f8f7fa;
+}
+
+/* STILE GENERALE */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+  background-color: var(--primary);
+  padding: 0.8rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.logopiccolo {
+  height: 40px;
+  border-radius: 6px;        /* leggermente squadrata */
+  background-color: #ffffff;
+  padding: 4px;
+}
+
+
+/* HEADER */
+header {
+  background-color: var(--accent);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--secondary);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* CONTENUTO PRINCIPALE */
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* BOTTONE PRINCIPALE */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background-color: var(--primary);
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  main {
+    margin: 2rem auto;
+  }
+}
