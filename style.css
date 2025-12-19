@@ -1,5 +1,11 @@
 /* RESET BASE */
+
+@font-face {
+  font-family: bebas; /* set name */
+  src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* url of the font */
+}
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,6 +52,8 @@ nav a {
   text-decoration: none;
   font-weight: 500;
   transition: opacity 0.2s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
 }
 
 nav a:hover {
@@ -86,6 +94,12 @@ main p {
   margin-bottom: 2rem;
 }
 
+.chiSiamo{
+  font-family: bebas;
+  padding-left: 1.4rem;
+  padding-right: 1rem;
+  font-size: 1.3rem;
+}
 /* BOTTONE PRINCIPALE */
 .btn {
   display: inline-block;
