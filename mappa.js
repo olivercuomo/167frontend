@@ -20,6 +20,17 @@ const punti = [
     linkPosto: "https://www.google.com/maps/place/Parrocchia+di+San+Giuseppe+Sposo+della+Beata+Vergine+Maria/@40.7408132,14.4921015,402m/data=!3m2!1e3!5s0x133bbcc0570ae48d:0x353ad98697b82b8c!4m6!3m5!1s0x133bbcc10d771f7d:0xc944920f1ab339c6!8m2!3d40.7407333!4d14.4926433!16s%2Fg%2F1tf1346b?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
     link: " https://www.sangiuseppepompei.it/bacheca.php",
   },
+  {
+    nome: "parco del bambino",
+    coord: [40.741019454250505, 14.494968264897194],
+    linkPosto: "https://maps.app.goo.gl/HvPrj1AxbHQE6yRz9",
+    numeroTel: "3511493971",
+  },{
+    nome: "sede scout",
+    coord: [40.739985673555815, 14.493210426425147],
+    linkPosto: "https://www.google.com/maps/place/Parrocchia+di+San+Giuseppe+Sposo+della+Beata+Vergine+Maria/@40.7408132,14.4921015,402m/data=!3m2!1e3!5s0x133bbcc0570ae48d:0x353ad98697b82b8c!4m6!3m5!1s0x133bbcc10d771f7d:0xc944920f1ab339c6!8m2!3d40.7407333!4d14.4926433!16s%2Fg%2F1tf1346b?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
+    link: " https://www.instagram.com/agesciscoutpompei1/",
+  },
 ];
 
 // Aggiungi i marker
@@ -38,6 +49,13 @@ punti.forEach(p => {
            Clicca qui per maggiori informazioni
         </a>
       </p>
+    `;
+  }
+  if (p.numeroTel) {
+    popupContent += `
+      <a href="tel:+39${p.numeroTel}">
+        Chiama  
+      </a>
     `;
   }
 
